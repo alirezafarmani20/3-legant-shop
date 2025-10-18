@@ -1,5 +1,5 @@
 <template>
   <div>
-    <RouterView />
+    <h1>sing in page</h1>
   </div>
 </template>

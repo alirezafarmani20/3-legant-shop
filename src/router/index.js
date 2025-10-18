@@ -6,16 +6,55 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
       component: HomeView,
     },
     {
       path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
+    },
+    {
+      path: '/blog',
+      component: () => import('@/views/BlogView.vue'),
+    },
+    {
+      path: '/blog:id',
+      components: () => import('@/views/SinglePostView.vue'),
+    },
+    {
+      path: '/cart',
+      component: () => import('@/views/CartView.vue'),
+    },
+    {
+      path: '/check-out',
+      component: () => import('@/views/CheckOutView.vue'),
+    },
+    {
+      path: '/my-account',
+      component: () => import('@/views/MyAccountView.vue'),
+    },
+    {
+      path: '/order',
+      component: () => import('@/views/OrderView.vue'),
+    },
+    {
+      path: '/products',
+      component: () => import('@/views/ProductView.vue'),
+    },
+    {
+      path: '/singin',
+      component: () => import('@/views/SinginView.vue'),
+    },
+    {
+      path: '/post:id',
+      component: () => import('@/views/SinglePostView.vue'),
+    },
+    {
+      path: '/products:id',
+      component: () => import('@/views/SingleProductView.vue'),
+    },
+    {
+      path: '/singup',
+      component: () => import('@/views/SingupView.vue'),
     },
   ],
 })
