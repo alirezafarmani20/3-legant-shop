@@ -1,5 +1,9 @@
+<script setup>
+import ImageGallery from '@/components/ImageGallery.vue'
+</script>
+
 <template>
   <div>
-    <h1>hello world this is my first applications</h1>
+    <ImageGallery />
   </div>
 </template>
